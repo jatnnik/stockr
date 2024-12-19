@@ -12,3 +12,16 @@ export type PageProps<
     user: User;
   };
 };
+
+export interface Category {
+  id: number;
+  title: string;
+}
+
+export interface Item {
+  id: number;
+  name: string;
+  count: number;
+  category_id: Category['id'];
+  category: Category;
+}

@@ -21,7 +21,7 @@ export default function Authenticated({
           <div className="flex h-16 justify-between">
             <div className="flex">
               <div className="flex shrink-0 items-center">
-                <Link href="/">
+                <Link href={route('dashboard')}>
                   <ApplicationLogo />
                 </Link>
               </div>
@@ -31,7 +31,7 @@ export default function Authenticated({
                   href={route('dashboard')}
                   active={route().current('dashboard')}
                 >
-                  Dashboard
+                  Vorräte
                 </NavLink>
               </div>
             </div>
